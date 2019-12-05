@@ -43,17 +43,17 @@ class TwoDimArr{
 	static int [] colSum(int [][] arr){//4
 		int [] colSumArr = new int[arr[0].length];
 		
-		
+		//열별 합 0으로 초기화
 		for(int i=0; i<colSumArr.length; i++)
 			colSumArr[i]=0;
 		
-		
+		//열별 합 계산
 		for(int j=0; j<arr[0].length; j++){
 			for(int i=0; i<arr.length; i++){
 				colSumArr[j] += arr[i][j];
 			}
 		}
-		
+		//열별 합 반환
 		return colSumArr;
 	}
 	 
@@ -79,8 +79,8 @@ class TwoDimArr{
 			for(int j=0 ; j<arr[0].length; j++){
 				if(max<arr[i][j]){
 					max = arr[i][j];
-					index[0] = i;
-					index[1] = j;
+					index[0] = i;//행은 i
+					index[1] = j;//열은 j
 				}
 			}
 		}
