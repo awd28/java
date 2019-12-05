@@ -1,7 +1,8 @@
 class Elevator{
-
+	
 	int floor;
 	boolean isOpen;
+	
 	
 	void open(){
 		System.out.println("문이 열립니다.");
@@ -27,7 +28,7 @@ class Elevator{
 			System.out.println(n+"층은 없습니다. 층을 다시 입력해주세요. ");
 			return;
 		}
-		
+		//이 라인까지 왔다는 말은 유효한 층을 입력했다는 말이므로 
 		report();//도착 후 현재 층 표시
 		
 		open();//문 열기
